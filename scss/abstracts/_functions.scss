@@ -1,0 +1,5 @@
+// abstracts/_function.scss
+
+@function spacing($size) {
+    @return $size * 5px;
+}

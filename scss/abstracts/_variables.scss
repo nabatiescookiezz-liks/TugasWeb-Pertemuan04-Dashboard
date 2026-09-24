@@ -1,0 +1,45 @@
+// abstracts/variables.scss
+
+// ==========
+// COLORS
+// ==========
+
+$warna-utama: #fdd1e2;
+$warna-gelap: #0b0733;
+$warna-terang: #fffacd;
+$warna-putih: #ffffff;
+$warna-teks: #a3c3f6;
+$warna-border:#d1d5db;
+
+// ==========
+// SPACING
+// ==========
+
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+$spacing-xl: 40px;
+$spacing-xxl: 50px;
+$spacing-section: 60px;
+
+// ==========
+// SIZING
+// ==========
+
+$radius-card: 15px;
+$radius-input: 10px;
+$radius-section: 20px;
+
+// ==========
+// SHADOW
+// ==========
+
+$shadow-card: 0px 8px 20px rgba(0, 0, 0, 0.08);
+
+// ==========
+// FONT
+// ==========
+
+$font-family: arial, sans-serif;
+$line-height: 1.5;

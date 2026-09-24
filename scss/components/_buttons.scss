@@ -1,0 +1,28 @@
+// components/_buttons.scss
+
+@use "../abstracts/variables" as *;
+
+.contact-form {
+    button {
+        align-self: flex-start;
+
+        background-color: $warna-utama;
+        color: $warna-putih;
+
+        border: none;
+        padding: 12px 25px;
+        margin-top: 5px;
+
+        border-radius: $radius-input;
+
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        transition: 0.3s ease;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+// layout/_sections.scss
+
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: $spacing-lg;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $spacing-xl $spacing-md;
+}
+
+.main-content {
+
+    min-width: 0;
+
+    section {
+        padding: $spacing-xxl 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+
+    h2 {
+        color: $warna-utama;
+    }
+}
+
+
+@include responsive(900px) {
+    .page-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: relative;
+    }
+
+    .home-section {
+        min-height: auto;
+    }
+}
+
+@include responsive(768px) {
+    .nav-list {
+        gap: 15px;
+    }
+
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text {
+        width: 100%;
+    }
+
+    .profile-figure {
+        img {
+            width: 220px;
+            height: 220px;
+        }
+    }
+
+    .about-section {
+        padding: $spacing-lg !important;
+    }
+
+    .contact-list {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        padding: $spacing-md;
+    }
+}
+
+@include responsive(480px) {
+    .site-header {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .main-content {
+        section {
+            padding: 35px 0;
+        }
+    }
+
+    .home-text {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .page-layout {
+        padding: 25px 15px;
+    }
+}
