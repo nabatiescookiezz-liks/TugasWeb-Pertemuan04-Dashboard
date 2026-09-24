@@ -20,9 +20,21 @@
 
     h2 {
         margin-top: 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
     }
 
     ul {
         padding-left: $spacing-md;
+        color: $warna-gelap;
     }
+
+    li {
+        color: $warna-gelap;
     }
+}
