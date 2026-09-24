@@ -1,0 +1,31 @@
+// components/_navbar.scss
+
+@use "../abstracts/variables" as *;
+
+.site-nav {
+    background-color: $warna-gelap;
+    padding: $spacing-sm $spacing-md;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $spacing-lg;
+
+    a {
+        color: $warna-putih;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: $warna-utama;
+        }
+    }
+}

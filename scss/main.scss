@@ -1,0 +1,53 @@
+// main.scss
+
+// ==============================
+// ABSTRACTS
+// ==============================
+
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/functions";
+
+// ==============================
+// BASE
+// ==============================
+
+@use "base/reset";
+@use "base/typography";
+@use "base/base";
+
+// ==============================
+// COMPONENTS
+// ==============================
+
+@use "components/navbar";
+@use "components/cards";
+@use "components/buttons";
+@use "components/form";
+
+// ==============================
+// LAYOUT
+// ==============================
+
+@use "layout/header";
+@use "layout/footer";
+@use "layout/sidebar";
+@use "layout/sections";
+
+// ==============================
+// PAGES
+// ==============================
+
+@use "pages/home";
+
+// ==============================
+// THEMES
+// ==============================
+
+@use "themes/default";
+
+// ==============================
+// VENDORS
+// ==============================
+
+@use "vendors/vendor";

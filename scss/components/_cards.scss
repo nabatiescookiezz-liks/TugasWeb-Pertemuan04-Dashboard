@@ -1,0 +1,28 @@
+// components/_cards.scss
+
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.education-card,
+.experience-card {
+    @include card-style;
+
+
+    padding: $spacing-md + 5px;
+    margin: $spacing-md 0;
+
+    &:hover {
+        @include hover-lift;
+    }
+
+    h3 {
+        margin-top: 0;
+        color: $warna-gelap;
+    }
+}
+
+.experience-card {
+    li {
+        margin-bottom: 8px;
+    }
+}

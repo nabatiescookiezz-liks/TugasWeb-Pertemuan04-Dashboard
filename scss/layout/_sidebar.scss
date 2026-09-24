@@ -1,0 +1,28 @@
+// layout/_sidebar.scss
+
+@use "../abstracts/variables" as *;
+
+.sidebar {
+    background-color: $warna-terang;
+    color: $warna-gelap;
+
+    padding: 25px;
+    border-radius: $radius-card;
+
+    height: fit-content;
+    position: sticky;
+    top: $spacing-md;
+
+    h2,
+    h3 {
+        color: $warna-gelap;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    ul {
+        padding-left: $spacing-md;
+    }
+    }

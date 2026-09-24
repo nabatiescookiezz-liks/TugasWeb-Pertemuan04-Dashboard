@@ -1,0 +1,26 @@
+// abstract/mixins.scss
+
+@use "variables" as *;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card-style {
+    background-color: $warna-terang;
+    border-radius: $radius-card;
+    transition: 0.3s ease;
+}
+
+@mixin hover-lift {
+        transform: translateY(-5px);
+        box-shadow: $shadow-card;
+}
+
+@mixin responsive($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}

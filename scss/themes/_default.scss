@@ -1,0 +1,43 @@
+// themes/_default.scss
+
+@use "../abstracts/variables" as *;
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #0f172a;
+        color: #e5e7eb;
+    }
+
+    .site-header {
+        background-color: #aaaaf8;
+    }
+
+    .site-nav,
+    .site-footer {
+        background-color: #111827;
+    }
+
+    .sidebar,
+    .about-section,
+    .education-card,
+    .experience-card,
+    .contact-item,
+    .contact-form {
+        background-color: #1f2937;
+    }
+
+    .home-text h2,
+    .education-card h3,
+    .experience-card h3 {
+        color: #f9fafb;
+    }
+
+    .profile-figure figcaption {
+        color: #cbd5e1;
+    }
+
+    .contact-item {
+        color: #e5e7eb;
+    }
+}

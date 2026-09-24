@@ -1,0 +1,11 @@
+// layout/_footer.scss
+
+@use "../abstracts/variables" as *;
+
+.site-footer {
+    background-color: $warna-gelap;
+    color: $warna-putih;
+    text-align: center;
+    padding: 25px $spacing-md;
+    margin-top: $spacing-md;
+}

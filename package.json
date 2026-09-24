@@ -1,0 +1,15 @@
+{
+  "name": "tugas-rutin-4",
+  "version": "1.0.0",
+  "description": "Konversi CSS ke SCSS dengan struktur 7-1 pattern",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.105.0",
+    "vite": "^8.3.0"
+  }
+}

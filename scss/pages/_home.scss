@@ -1,0 +1,94 @@
+// pages/_home.scss
+
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.home-section {
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-xl;
+}
+
+.home-text {
+    flex: 1;
+
+    h2 {
+        color: $warna-gelap;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+.profile-figure {
+    margin: 0;
+    text-align: center;
+    flex-shrink: 0;
+
+    img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    figcaption {
+        margin-top: $spacing-sm;
+        font-size: 0.9rem;
+        color: #666;
+    }
+}
+
+.about-section {
+    background-color: $warna-terang;
+    padding: $spacing-xxl !important;
+    border-radius: $radius-section;
+}
+
+.contact-section {
+    padding: $spacing-section 0 !important;
+}
+
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-md;
+    margin: $spacing-lg 0;
+}
+
+.contact-item {
+    flex: 1 1 200px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: $spacing-md;
+
+    background-color: $warna-terang;
+    border-radius: $radius-card;
+
+    color: $warna-teks;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+
+    &:hover {
+        @include hover-lift;
+    }
+
+    h3,
+    p {
+        margin: 0;
+    }
+}
+
+.contact-icon {
+    font-size: 2rem;
+}
